@@ -1,7 +1,7 @@
 [default]
 
 [development]
-EMAIL = 'dwaip.chowdhury@accionlabs.com'
+EMAIL = 'example@accionlabs.com'
 ENV = 'local'
 LARGE = {"driver-cores"= 12,"driver-memory"= "12g","total-executor-cores"= 12,"executor-memory"= "12g","num-executors"= 12 }
 MEDIUM = {"driver-cores"= 6,"driver-memory"= "6g","total-executor-cores"= 12,"executor-memory"= "12g","num-executors"= 12 }

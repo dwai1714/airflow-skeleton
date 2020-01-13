@@ -1,4 +1,4 @@
-# fpg_main_dag.py
+# main_dag.py
 """
 Prerequisites:
 # This example is to show how different things are done in airflow
@@ -21,7 +21,7 @@ base_path = os.path.dirname(os.path.abspath(__file__))
 session = settings.Session()
 email_to = dyn_settings.EMAIL
 
-DAG_NAME = 'fpg_main_dag'
+DAG_NAME = 'main_dag'
 args = {
     'start_date': datetime(2017, 3, 20),
     'provide_context': True
@@ -50,7 +50,7 @@ get_airflow_ts_nodash_id_task = PythonOperator(
     python_callable=get_airflow_ts_nodash_id,
     dag=dag)
 
-ts_no_dash_id = '{{ ti.xcom_pull(task_ids="get_airflow_ts_nodash_id_task" , dag_id = "fpg_main_dag")}}' # showing how to get xcom
+ts_no_dash_id = '{{ ti.xcom_pull(task_ids="get_airflow_ts_nodash_id_task" , dag_id = "main_dag")}}' # showing how to get xcom
 
 bash_job_task = BashOperator(
         task_id="bash_job_task",
