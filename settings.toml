@@ -1,0 +1,14 @@
+[default]
+
+[development]
+EMAIL = 'dwaip.chowdhury@accionlabs.com'
+ENV = 'local'
+LARGE = {"driver-cores"= 12,"driver-memory"= "12g","total-executor-cores"= 12,"executor-memory"= "12g","num-executors"= 12 }
+MEDIUM = {"driver-cores"= 6,"driver-memory"= "6g","total-executor-cores"= 12,"executor-memory"= "12g","num-executors"= 12 }
+SMALL = {"driver-cores"= 1,"driver-memory"= "1g","total-executor-cores"= 1,"executor-memory"= "1g","num-executors"= 1 }
+[staging]
+
+[testing]
+
+
+[production]
