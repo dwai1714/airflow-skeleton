@@ -25,17 +25,17 @@ Airflow Dag for doing spark-submit and other things
 * Open another terminal - cd ~/airflow; export AIRFLOW_HOME=~/airflow; airflow scheduler
 * The dag main_dag.py should appear in localhost:8080
 * Do following changes in AIRFLOW_HOME/airflow.cfg
-  ** dags_folder = <your_dir>/airflow-skeleton
-  ** sql_alchemy_conn = postgresql+psycopg2://__dc@localhost:5432/dc__  to your postgres instance
-  ** executor = LocalExecutor
-  ** smtp_host = smtp.sendgrid.net
-  **smtp_starttls = False
-  **smtp_ssl = True
-  **smtp_user = apikey
-  **smtp_password = <api key from sendgrid>
-  **smtp_port = 465
-  **smtp_mail_from = airflow@accionlabs.com
-* Add following in ~/bash_profile export SETTINGS_FILE_FOR_DYNACONF='["<your_dir>/settings.toml"]'
+  ** dags_folder = <your_dir>/airflow-skeleton  
+  ** sql_alchemy_conn = postgresql+psycopg2://__dc@localhost:5432/dc__  to your postgres instance  
+  ** executor = LocalExecutor  
+  ** smtp_host = smtp.sendgrid.net  
+  **smtp_starttls = False  
+  **smtp_ssl = True  
+  **smtp_user = apikey  
+  **smtp_password = <api key from sendgrid>  
+  **smtp_port = 465  
+  **smtp_mail_from = airflow@accionlabs.com  
+* Add following in ~/bash_profile export SETTINGS_FILE_FOR_DYNACONF='["<your_dir>/settings.toml"]'  
 
 
 ### How to run
