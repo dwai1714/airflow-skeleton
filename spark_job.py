@@ -1,6 +1,6 @@
 import os
 
-from pyspark.sql import SparkSession
+from pyspark.sql import SparkSession 
 base_path = os.path.dirname(os.path.abspath(__file__))
 
 spark = SparkSession \
@@ -12,4 +12,5 @@ df = spark.read \
          .format("csv") \
          .option("header", "true")  \
          .load("https://raw.githubusercontent.com/dwai1714/airflow-skeleton/master/Book1.csv")
+df.count()
 df.show()
