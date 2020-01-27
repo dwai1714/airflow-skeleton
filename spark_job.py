@@ -11,5 +11,5 @@ spark = SparkSession \
 df = spark.read \
          .format("csv") \
          .option("header", "true")  \
-         .load("file:///" + base_path + "/Book1.csv")
+         .load("https://raw.githubusercontent.com/dwai1714/airflow-skeleton/master/Book1.csv")
 df.show()
