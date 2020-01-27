@@ -13,4 +13,4 @@ df = spark.read \
          .option("header", "true")  \
          .load("https://raw.githubusercontent.com/dwai1714/airflow-skeleton/master/Book1.csv")
 df.count()
-df.show()
+df.show(100, False)
